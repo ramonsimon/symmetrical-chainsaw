@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +19,6 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+//Route::delete('events/destroy', [\App\Http\Controllers\Admin\EventsController::class, 'massDestroy'])->name('events.massDestroy');
+//Route::resource('events', 'EventsController');
